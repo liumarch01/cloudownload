@@ -7,7 +7,7 @@
 ## 使用教程
 1. 申请一个自己的域名并托管到cloudflare，可前往[DNSHE](https://www.dnshe.com/)免费注册
 2. 在cloudflare中创建一个pages，把项目中的[colo.txt](https://github.com/liumarch01/cloudownload/blob/main/colo.txt)和[loc.txt](https://github.com/liumarch01/cloudownload/blob/main/loc.txt)部署到pages中
-3. 在cloudflare中新建一个Worker，选择【从hello world开始！】，然后把项目的[_worker.sj](https://github.com/liumarch01/cloudownload/blob/main/_worker.js)中的内容复制进入worker
+3. 在cloudflare中新建一个Worker，选择【从hello world开始！】，然后把项目的[_worker.js](https://github.com/liumarch01/cloudownload/blob/main/_worker.js)中的内容复制进入worker
 4. 修改worker的183行和195行的的链接为pages中对应文件的链接；修改55和56行的网页图标为自己喜欢的图像链接，可部署图像到pages中进行自定义；此步骤非强制要求不会影响正常下载但会造成一定程度的影响
 5. 在Worker页面的【域】中点击【添加路由】添加一个自己域名的子域，例如【cloudownload.example.com/*】
 6. 回到cloudflare的首页，点击你添加进去的主域名如【example.com】,点击【DNS记录】，选择【+添加记录】
